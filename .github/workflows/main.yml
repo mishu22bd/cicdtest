@@ -25,4 +25,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "this is me"
-          echo ""I am multiline script"
+          echo "I am multiline script"
