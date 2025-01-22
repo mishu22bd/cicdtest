@@ -1,0 +1,28 @@
+name: CI
+
+
+on:
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+
+jobs:
+
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Run a echo command
+        run: echo Hello World!
+
+      - name: Run a multi-line script
+        run: |
+          echo "this is me"
+          echo ""I am multiline script"
